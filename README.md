@@ -5,4 +5,9 @@ Converting your AR-150 to a WiFi Pineapple NANO should be an easy process.  Howe
 Summary:
 1. Rootfs 2.6M
 2. PineAP(d) working.
-3. Squashfs block size 1MB
+3. Drivers for: kmod-rt2800, kmod-rtl8187 and kmod-rtl8192cu (TL-WN7200ND, AWUS036H, based on RT5370, etc)
+4. Kernel 3.18.84
+
+Recomended setup
+1. USB 2.0 2 ports hub https://www.ebay.co.uk/itm/USB-2-0-2-Dual-Port-Hub-For-Laptop-Macbook-Notebook-PC-Mouse-Flash-Disk/273070654192
+2. Generic RT5370 adapter
