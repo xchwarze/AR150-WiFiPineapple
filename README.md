@@ -13,6 +13,7 @@ Summary for 2.6.x:
 2. PineAP(d) working.
 3. Drivers for: kmod-rt2800, kmod-rtl8187 and kmod-rtl8192cu (TL-WN7200ND, AWUS036H, based on RT5370, etc)
 4. Kernel 4.14.134
+5. Fix LAN and WAN ports. No more swapped ports.
 
 Recomended setup
 1. USB 2.0 2 ports hub https://www.ebay.co.uk/itm/USB-2-0-2-Dual-Port-Hub-For-Laptop-Macbook-Notebook-PC-Mouse-Flash-Disk/273070654192
