@@ -1,0 +1,8 @@
+001-mips-cflag-optimization.patch
+002-mips24kc-set-optimization.patch
+004-kernel-mtune24kc.patch
+005-lzma-mips24kc-optimize.patch
+006-branch-likely-optimize.patch
+011-add-DNDEBUG-default.patch
+040-gcc-final-toolchain-24kc-optimize.patch
+041-update-toolchain.patch

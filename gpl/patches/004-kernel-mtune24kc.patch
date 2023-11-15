@@ -1,0 +1,15 @@
+--- /dev/null
++++ b/./target/linux/ar71xx/patches-4.14/221-kernel-mtune-24kc.patch
+@@ -0,0 +1,12 @@
++--- a/arch/mips/Makefile
+++++ b/arch/mips/Makefile
++@@ -166,7 +166,8 @@
++ cflags-$(CONFIG_CPU_R4X00)	+= -march=r4600 -Wa,--trap
++ cflags-$(CONFIG_CPU_TX49XX)	+= -march=r4600 -Wa,--trap
++ cflags-$(CONFIG_CPU_MIPS32_R1)	+= -march=mips32 -Wa,--trap
++-cflags-$(CONFIG_CPU_MIPS32_R2)	+= -march=mips32r2 -mtune=34kc -Wa,--trap
+++cflags-$(CONFIG_CPU_MIPS32_R2)	+= $(call cc-option,-march=24kc -mno-branch-likely -mno-mips16 -mno-interlink-compressed -msym32 -fno-caller-saves -fomit-frame-pointer -mframe-header-opt,-march=24kc -mno-branch-likely -mno-mips16 -mno-interlink-compressed -msym32 -fno-caller-saves -fomit-frame-pointer -mframe-header-opt -U_MIPS_ISA -D_MIPS_ISA=_MIPS_ISA_MIPS32) \
+++			-Wa,-march=24kc -mno-branch-likely -mno-mips16 -mno-interlink-compressed -msym32 -fno-caller-saves -fomit-frame-pointer -mframe-header-opt -Wa,--trap
++ cflags-$(CONFIG_CPU_MIPS32_R6)	+= -march=mips32r6 -Wa,--trap -modd-spreg
++ cflags-$(CONFIG_CPU_MIPS64_R1)	+= -march=mips64 -Wa,--trap
++ cflags-$(CONFIG_CPU_MIPS64_R2)	+= -march=mips64r2 -Wa,--trap

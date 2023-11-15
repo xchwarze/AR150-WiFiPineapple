@@ -1,0 +1,12 @@
+--- a/target/linux/ar71xx/Makefile
++++ b/target/linux/ar71xx/Makefile
+@@ -10,7 +10,8 @@ ARCH:=mips
+ BOARD:=ar71xx
+ BOARDNAME:=Atheros AR7xxx/AR9xxx
+ FEATURES:=usbgadget
+-CPU_TYPE:=24kc
++CPU_TYPE:=24kc
++CPU_SUBTYPE:=
+ SUBTARGETS:=generic tiny nand mikrotik
+ 
+ KERNEL_PATCHVER:=4.14

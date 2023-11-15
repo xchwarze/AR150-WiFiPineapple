@@ -1,0 +1,13 @@
+diff --git a/toolchain/gcc/final/Makefile b/toolchain/gcc/final/Makefile
+index 01fec38..5c5f720 100644
+--- a/toolchain/gcc/final/Makefile
++++ b/toolchain/gcc/final/Makefile
+@@ -11,7 +11,7 @@ GCC_CONFIGURE += \
+ 	--with-slibdir=$(TOOLCHAIN_DIR)/lib \
+ 	--enable-lto \
+ 	--enable-libstdcxx-threads \
+-	--disable-nls --with-mips-plt \
++	--disable-nls --with-mips-plt --enable-default-pie \
+ 	--with-libelf=$(TOPDIR)/staging_dir/host
+ 
+ ifdef CONFIG_USE_MUSL

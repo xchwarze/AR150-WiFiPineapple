@@ -1,0 +1,13 @@
+diff --git a/config/Config-images.in b/config/Config-images.in
+index f59a336..8e6fd17 100644
+--- a/config/Config-images.in
++++ b/config/Config-images.in
+@@ -141,7 +141,7 @@ menu "Target Images"
+ 			int "Block size (in KiB)"
+ 			depends on TARGET_ROOTFS_SQUASHFS
+ 			default 64 if LOW_MEMORY_FOOTPRINT
+-			default 256
++			default 512
+ 
+ 	menuconfig TARGET_ROOTFS_UBIFS
+ 		bool "ubifs"

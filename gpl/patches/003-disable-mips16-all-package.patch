@@ -1,0 +1,11 @@
+--- a/include/package.mk
++++ b/include/package.mk
+@@ -13,7 +13,7 @@ PKG_BUILD_DIR ?= $(BUILD_DIR)/$(PKG_NAME)$(if $(PKG_VERSION),-$(PKG_VERSION))
+ PKG_INSTALL_DIR ?= $(PKG_BUILD_DIR)/ipkg-install
+ PKG_MD5SUM ?= unknown
+ PKG_BUILD_PARALLEL ?=
+-PKG_USE_MIPS16 ?= 1
++PKG_USE_MIPS16 ?= 0
+ PKG_IREMAP ?= 1
+ 
+ ifneq ($(CONFIG_PKG_BUILD_USE_JOBSERVER),)
